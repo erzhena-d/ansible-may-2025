@@ -1,0 +1,14 @@
+- hosts: vm1
+  become: true
+  tasks:
+  - name: Print OS
+    debug: msg="{{ ansible_distribution }}"
+
+  - name: Install tree
+    ansible.builtin.apt: 
+      name: tree
+    register: kaizen
+
+  - name: debug
+    debug: msg="{{ kaizen }}"
+      
