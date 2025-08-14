@@ -1,0 +1,5 @@
+---
+# defaults file for database
+db_name: beatles
+db_user: john
+db_password: lennon123

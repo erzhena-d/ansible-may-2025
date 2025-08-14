@@ -1,0 +1,6 @@
+---
+# tasks file for php
+- name: Install php packages
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+     
